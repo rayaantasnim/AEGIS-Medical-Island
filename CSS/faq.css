@@ -79,3 +79,78 @@
             font-weight: 700;
             margin-right: 8px;
         }
+
+
+        @media screen and (max-width: 992px) {
+    .faq-section {
+        padding: 0 15px;
+        margin: 30px auto;
+    }
+
+    .aegis-title {
+        font-size: 1.8rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 16px 20px;
+        text-align: justify;
+    }
+
+    .accordion-body {
+        text-align: justify;
+        padding: 18px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq-section {
+        padding: 0 10px;
+        margin: 20px auto;
+    }
+
+    .aegis-title {
+        font-size: 1.5rem;
+    }
+
+    .aegis-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .accordion-button {
+        font-size: 0.95rem;
+        padding: 14px 16px;
+        text-align: justify;
+    }
+
+    .accordion-body {
+        text-align: justify;
+        padding: 15px 16px;
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-section {
+        padding: 0 8px;
+        margin: 15px auto;
+    }
+
+    .aegis-title {
+        font-size: 1.3rem;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem;
+        padding: 12px 14px;
+        text-align: justify;
+    }
+
+    .accordion-body {
+        text-align: justify;
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+}
