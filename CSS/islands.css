@@ -1,0 +1,74 @@
+/* --- Unique & Minimalist Specifications Styling (Compact & Mobile-Optimized) --- */
+
+.standalone-paragraph-box {
+  background: #fcfbfa;
+  border-left: 3px solid #7c6a9f; /* Unique modern lavender tone */
+  padding: 1rem; /* Compact padding for small screens */
+  margin-top: 1rem; /* Reduced top margin */
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 4px 15px rgba(124, 106, 159, 0.03);
+}
+
+/* 4 points arranged in a responsive grid */
+.cottage-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0; /* Tighter bottom margin */
+  display: grid;
+  grid-template-cols: 1fr;
+  gap: 0.75rem; /* Super tight gap on mobile */
+}
+
+/* Responsive layout adjustments for tablets and desktops */
+@media (min-width: 768px) {
+  .standalone-paragraph-box {
+    padding: 1.5rem; /* Restored breathing room for larger layouts */
+    margin-top: 1.5rem;
+  }
+  
+  .cottage-features {
+    grid-template-cols: repeat(2, 1fr);
+    gap: 1.25rem; /* Elegant spacing on larger views */
+  }
+}
+
+/* Individual list item card styling with light micro-interactions */
+.cottage-features li {
+  background: #ffffff;
+  border: 1px solid #f0edf5;
+  padding: 0.75rem 0.85rem; /* Tight, non-bulky cell padding */
+  border-radius: 6px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #555555;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover interaction: subtle elevation and clean color shift */
+.cottage-features li:hover {
+  transform: translateY(-2px); /* Gentle micro-lift */
+  border-color: #a3e635; /* Trendy neon-mint border on hover */
+  box-shadow: 0 6px 16px rgba(124, 106, 159, 0.08);
+}
+
+/* Strong text formatting for key identifiers */
+.cottage-features li strong {
+  display: inline-block;
+  color: #2e2440; /* Dark violet-black */
+  font-size: 0.92rem;
+  margin-right: 0.35rem;
+  font-weight: 600;
+}
+
+/* Bottom paragraph styling with micro-divider */
+.standalone-paragraph-box p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666666;
+  border-top: 1px dashed #e8e5ee;
+  padding-top: 0.85rem; /* Reduced padding above the closing paragraph */
+  margin: 0;
+}
+
