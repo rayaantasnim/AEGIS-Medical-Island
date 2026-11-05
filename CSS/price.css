@@ -1,0 +1,32 @@
+      .vector-card-container {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        margin-bottom: 3rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .vector-card-container:hover {
+        box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+      }
+      .grid-header-media {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: center;
+      }
+      @media (min-width: 992px) {
+        .grid-header-media {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .specifications-block {
+        margin-top: 1.75rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #f1f5f9;
+      }
+      .redirect-banner {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        border: 1px solid #334155;
+      }

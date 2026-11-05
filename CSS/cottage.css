@@ -1,0 +1,115 @@
+      :root {
+        --bg-cream: #F5F0E6;
+        --nav-deep-blue: #0F172A;
+        --accent-gold: #D97706;
+      }
+      body {
+        background-color: var(--bg-cream);
+        color: #1E293B;
+        font-family: system-ui, -apple-system, sans-serif;
+        overflow-x: hidden;
+      }
+      .cottage-card {
+        background: #ffffff;
+        border: 1px solid rgba(217, 119, 6, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+        margin-bottom: 2.5rem;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+      .cottage-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(217, 119, 6, 0.15);
+      }
+      .cottage-image-container {
+        background-color: #0A0F1D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        min-height: 340px;
+        position: relative;
+      }
+      .cottage-image {
+        max-width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+        border-radius: 8px;
+        transition: transform 0.5s ease;
+      }
+      .cottage-image:hover {
+        transform: scale(1.02);
+      }
+      .cottage-content {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .cottage-badge {
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        color: var(--accent-gold);
+        background: rgba(217, 119, 6, 0.1);
+        padding: 0.35rem 0.85rem;
+        border-radius: 50px;
+        align-self: flex-start;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .cottage-title {
+        font-size: 1.85rem;
+        font-weight: 800;
+        color: var(--nav-deep-blue);
+        line-height: 1.25;
+        margin-bottom: 0.5rem;
+      }
+      .cottage-subtitle {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--accent-gold);
+        margin-bottom: 1.25rem;
+      }
+      .cottage-description {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: #475569;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+      }
+      .cottage-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.75rem;
+      }
+      .cottage-features li {
+        font-size: 0.9rem;
+        color: #334155;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .cottage-features li strong {
+        color: var(--nav-deep-blue);
+      }
+      .standalone-paragraph-box {
+        background: #FFFFFF;
+        border-left: 4px solid var(--accent-gold);
+        border: 1px solid rgba(217, 119, 6, 0.15);
+        border-radius: 0 12px 12px 0;
+        padding: 2rem;
+        margin-top: -1.5rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+      }
+      .standalone-paragraph-box p {
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: #1E293B;
+        margin: 0;
+        text-align: justify;
+      }

@@ -1,0 +1,527 @@
+/* ==========================================================================
+   AEGIS Medical Island - Master Upgraded home.css (Compact Spacing & High Readability)
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+/* Root Variables & Theme Configuration */
+:root {
+    --bg-primary: #07090e;
+    --bg-secondary: #0f141f;
+    --surface-card: #131b2e;
+    --text-light: #ffffff;
+    --text-muted: #e2e8f0;
+    --accent-gold: #fbbf24;
+    --accent-gold-hover: #f59e0b;
+    --neon-glow-gold: 0 0 15px rgba(251, 191, 36, 0.35);
+    --neon-glow-cyan: 0 0 15px rgba(52, 211, 153, 0.35);
+    --border-gold: rgba(251, 191, 36, 0.3);
+    --border-dark: rgba(255, 255, 255, 0.12);
+}
+
+/* Base Reset & Typography */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Grand Core Hub Hero Banner */
+.grand-hub-hero {
+    background: linear-gradient(135deg, #0b111e 0%, #131c31 100%);
+    color: var(--text-light);
+    border: 1px solid var(--border-gold);
+    border-radius: 16px;
+    padding: 2.5rem 1.25rem 2rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), var(--neon-glow-gold);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grand-hub-hero:hover {
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(251, 191, 36, 0.5);
+}
+
+/* Narrative Paragraphs */
+.serve .para, .serve p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Hero Image Container */
+.hero-img-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--border-gold);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6), var(--neon-glow-gold);
+    background-color: var(--surface-card);
+    transition: all 0.3s ease;
+}
+
+.hero-img-wrapper:hover {
+    transform: scale(1.005);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.8), 0 0 30px rgba(251, 191, 36, 0.6);
+}
+
+/* Carousel Styling */
+.car {
+    max-width: 920px;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7), var(--neon-glow-gold);
+    border: 2px solid var(--border-gold);
+    background-color: var(--surface-card);
+}
+
+.car img {
+    border-radius: 6px;
+    object-fit: cover;
+    height: 400px;
+    width: 100% !important;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.015);
+}
+
+/* Key Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.metric-card {
+    background-color: var(--surface-card);
+    border: 1px solid var(--border-dark);
+    border-top: 3px solid var(--accent-gold);
+    border-radius: 10px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6), var(--neon-glow-gold);
+}
+
+.metric-number {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--accent-gold);
+    font-family: monospace;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+/* Gateway Quick-Navigation Cards with Crisp White Headings & Text */
+.hub-gateway-card {
+    background: var(--surface-card);
+    border: 2px solid var(--border-gold);
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hub-gateway-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.7), var(--neon-glow-gold);
+    border-color: var(--accent-gold);
+}
+
+/* Explicit High-Contrast White Text Overrides for Gateway Cards */
+.hub-gateway-card span.text-amber-700 {
+    color: var(--accent-gold) !important;
+}
+
+.hub-gateway-card h3.text-slate-900 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+.hub-gateway-card p.text-slate-600 {
+    color: #f1f5f9 !important;
+}
+
+.hub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    color: #000000;
+    font-weight: 900;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(217, 119, 6, 0.35);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 1.25rem;
+    align-self: flex-start;
+}
+
+.hub-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(251, 191, 36, 0.7), var(--neon-glow-gold);
+    color: #000000;
+}
+
+/* Aegis Section & Stack Styling (Why Sections) */
+.aegis-section {
+    padding: 2rem 0.75rem;
+    background-color: transparent;
+}
+
+.aegis-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.aegis-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.aegis-subtitle {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #34d399;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+}
+
+.aegis-title {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: var(--text-light);
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.aegis-title-divider {
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(90deg, #34d399, #fbbf24);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
+}
+
+.aegis-cards-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Single-Column Card Architecture with Neon Glow */
+.aegis-card {
+    background-color: var(--surface-card);
+    border: 1px solid var(--border-dark);
+    border-radius: 14px;
+    padding: 1.75rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.aegis-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), var(--neon-glow-cyan);
+    border-color: rgba(52, 211, 153, 0.5);
+}
+
+.aegis-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.aegis-card-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.aegis-card-index {
+    font-family: monospace;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #34d399;
+    background-color: rgba(52, 211, 153, 0.12);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.15);
+}
+
+.aegis-card-media {
+    width: 100%;
+    max-height: 380px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-dark);
+}
+
+.aegis-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.aegis-card:hover .aegis-card-image {
+    transform: scale(1.02);
+}
+
+.aegis-card-body {
+    line-height: 1.75;
+    color: var(--text-muted);
+}
+
+.aegis-card-narrative {
+    font-size: 0.98rem;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Multi-Column Feature Matrix Section */
+.feature-grid-section {
+    background-color: var(--surface-card);
+    border-radius: 16px;
+    padding: 2.5rem 1.75rem;
+    margin: 2.5rem 0;
+    border: 2px solid var(--border-gold);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5), var(--neon-glow-gold);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.feature-box {
+    background-color: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-gold);
+    border-top: 1px solid var(--border-dark);
+    border-right: 1px solid var(--border-dark);
+    border-bottom: 1px solid var(--border-dark);
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), var(--neon-glow-gold);
+    border-color: var(--accent-gold);
+}
+
+.feature-box h4 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.feature-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0;
+    text-align: left;
+}
+
+/* Unique Tactical Cards Grid */
+.new-unique-section {
+    background-color: var(--surface-card);
+    border-radius: 16px;
+    padding: 2.5rem 1.75rem;
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5), var(--neon-glow-cyan);
+    transition: all 0.3s ease;
+}
+
+.new-unique-section:hover {
+    box-shadow: 0 16px 35px rgba(0,0,0,0.7), 0 0 25px rgba(52, 211, 153, 0.6);
+}
+
+.new-unique-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.new-unique-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.new-unique-card:hover {
+    transform: translateY(-3px);
+    border-color: #34d399;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), var(--neon-glow-cyan);
+}
+
+.new-unique-card h4 {
+    color: var(--text-light);
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.new-unique-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Book Your Palace Section */
+.book-palace-section {
+    background: linear-gradient(135deg, #0b111e 0%, #131c31 100%);
+    border: 2px solid var(--accent-gold);
+    border-radius: 16px;
+    padding: 3rem 1.75rem;
+    color: var(--text-light);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), var(--neon-glow-gold);
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.book-palace-section:hover {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(251, 191, 36, 0.7);
+}
+
+/* ==========================================================================
+   Responsive Media Queries & Compact Mobile Spacing
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    #main-content {
+        margin-left: 0 !important;
+        padding: 0.75rem !important;
+    }
+    .car img {
+        height: 280px;
+    }
+    .grand-hub-hero {
+        padding: 2.5rem 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .grand-hub-hero {
+        padding: 2rem 0.75rem 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+    }
+    .hub-gateway-card {
+        padding: 1.25rem;
+    }
+    
+    /* Low Padding and Minimal Gaps for Why Sections on Smaller Screens */
+    .aegis-section {
+        padding: 0.75rem 0.2rem !important;
+    }
+    .aegis-container {
+        padding-left: 0.1rem !important;
+        padding-right: 0.1rem !important;
+    }
+    .aegis-cards-stack {
+        gap: 0.75rem !important;
+    }
+    .aegis-card {
+        padding: 1rem !important;
+        border-radius: 10px;
+    }
+    .aegis-header {
+        margin-bottom: 1.25rem !important;
+    }
+    .aegis-title {
+        font-size: 1.5rem !important;
+    }
+    .aegis-card-title {
+        font-size: 1.1rem !important;
+    }
+    .aegis-card-narrative {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+    }
+    .feature-grid-section, .new-unique-section {
+        padding: 1.5rem 0.85rem !important;
+        margin: 1.25rem 0 !important;
+        border-radius: 12px;
+    }
+    .feature-box, .new-unique-card {
+        padding: 1rem !important;
+    }
+    .book-palace-section {
+        padding: 2.25rem 1rem;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grand-hub-hero h1 {
+        font-size: 1.5rem !important;
+    }
+    .hub-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+    }
+    .metric-number {
+        font-size: 1.75rem;
+    }
+    .aegis-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}

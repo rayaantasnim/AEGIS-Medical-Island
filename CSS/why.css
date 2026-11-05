@@ -1,0 +1,206 @@
+
+  /* -------------------------------------------------------------------------
+     CSS Custom Properties (Theme Configuration)
+     ------------------------------------------------------------------------- */
+  :root {
+    --aegis-bg-main: #0a0c0e;
+    --aegis-bg-card: #121519;
+    --aegis-bg-card-hover: #181c22;
+    --aegis-border-color: rgba(212, 175, 55, 0.2);
+    --aegis-border-glow: rgba(212, 175, 55, 0.4);
+    
+    --aegis-accent-gold: #d4af37;
+    --aegis-accent-gold-light: #f3e5ab;
+    --aegis-accent-platinum: #e5e4e2;
+    --aegis-text-primary: #f4f5f6;
+    --aegis-text-secondary: #a0a6b1;
+    --aegis-text-muted: #6c737f;
+
+    --aegis-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --aegis-max-width: 900px;
+    --aegis-radius-lg: 12px;
+    --aegis-radius-sm: 6px;
+    --aegis-transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* -------------------------------------------------------------------------
+     Reset & Main Container Styles
+     ------------------------------------------------------------------------- */
+  .aegis-section {
+    background-color: var(--aegis-bg-main);
+    color: var(--aegis-text-primary);
+    font-family: var(--aegis-font-family);
+    line-height: 1.7;
+    padding: 5rem 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aegis-container {
+    width: 100%;
+    max-width: var(--aegis-max-width);
+    margin: 0 auto;
+  }
+
+  /* -------------------------------------------------------------------------
+     Header Component
+     ------------------------------------------------------------------------- */
+  .aegis-header {
+    text-align: center;
+    margin-bottom: 4.5rem;
+    position: relative;
+  }
+
+  .aegis-subtitle {
+    color: var(--aegis-accent-gold);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .aegis-title {
+    color: var(--aegis-text-primary);
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .aegis-title-divider {
+    height: 1px;
+    width: 120px;
+    background: linear-gradient(90deg, transparent, var(--aegis-accent-gold), transparent);
+    margin: 0 auto;
+  }
+
+  /* -------------------------------------------------------------------------
+     Vertical Single-Column Cards Stack Layout
+     ------------------------------------------------------------------------- */
+  .aegis-cards-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  /* -------------------------------------------------------------------------
+     Individual Card Styling
+     ------------------------------------------------------------------------- */
+  .aegis-card {
+    background-color: var(--aegis-bg-card);
+    border: 1px solid var(--aegis-border-color);
+    border-radius: var(--aegis-radius-lg);
+    overflow: hidden;
+    transition: var(--aegis-transition);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .aegis-card:hover {
+    border-color: var(--aegis-border-glow);
+    background-color: var(--aegis-bg-card-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.08);
+  }
+
+  /* Structural Card Header */
+  .aegis-card-header {
+    padding: 1.75rem 2rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .aegis-card-index {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--aegis-accent-gold);
+    letter-spacing: 0.2em;
+    border: 1px solid var(--aegis-border-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--aegis-radius-sm);
+    background: rgba(212, 175, 55, 0.05);
+  }
+
+  .aegis-card-title {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    font-weight: 600;
+    color: var(--aegis-accent-platinum);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  /* Media/Image Section */
+  .aegis-card-media {
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    background-color: #050607;
+  }
+
+  .aegis-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.85) contrast(1.1);
+    transition: var(--aegis-transition);
+  }
+
+  .aegis-card:hover .aegis-card-image {
+    filter: brightness(0.95) contrast(1.15);
+    transform: scale(1.02);
+  }
+
+  /* Deep Narrative Content Block */
+  .aegis-card-body {
+    padding: 2.25rem 2.25rem 2.5rem 2.25rem;
+  }
+
+  .aegis-card-narrative {
+    color: var(--aegis-text-secondary);
+    font-size: 0.98rem;
+    text-align: justify;
+    margin: 0;
+    hyphens: auto;
+  }
+
+  .aegis-card-narrative strong {
+    color: var(--aegis-accent-gold-light);
+    font-weight: 600;
+  }
+
+  /* -------------------------------------------------------------------------
+     Responsive Adaptations
+     ------------------------------------------------------------------------- */
+  @media (max-width: 768px) {
+    .aegis-section {
+      padding: 3rem 1rem;
+    }
+    .aegis-card-header {
+      padding: 1.25rem 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .aegis-card-media {
+      height: 240px;
+    }
+    .aegis-card-body {
+      padding: 1.5rem;
+    }
+    .aegis-card-narrative {
+      text-align: left;
+      font-size: 0.925rem;
+    }
+  }

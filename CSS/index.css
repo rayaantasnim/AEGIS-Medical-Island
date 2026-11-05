@@ -1,0 +1,173 @@
+#c {
+  width: 0%;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+.first {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2d3d;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 900px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.carousel-item {
+  img {
+    width: 50% !important;
+    height: auto;
+  }
+}
+
+.first span {
+  color: #f39c12; /* IDAI শব্দ হাইলাইট */
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel responsive control */
+@media (max-width: 1100px) {
+  .car {
+    margin: 0 auto;
+  }
+
+  .car .carousel-item img {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .car .carousel-item img {
+    width: 95% !important;
+  }
+
+  .car {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .car .carousel-item img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  #c {
+    width: 20%;
+  }
+
+  #d {
+    width: 75% !important;
+  }
+}
+
+/* Green Shock Animation Keyframes */
+@keyframes greenShockPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.8);
+    border-color: #10b981;
+  }
+  50% {
+    box-shadow: 0 0 25px 8px rgba(16, 185, 129, 0.6);
+    border-color: #34d399;
+  }
+  100% {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-color: #e2e8f0;
+  }
+}
+
+.shock-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shock-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: greenShockPulse 1s ease-out forwards;
+}
+
+/* Custom Styling for Newly Added Sections & Hover Effects */
+.new-unique-section {
+  margin-top: 4rem;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 16px;
+  color: #f8fafc;
+  border: 1px solid #334155;
+}
+
+.new-unique-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.new-unique-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.new-unique-card:hover {
+  transform: translateY(-8px);
+  background: rgba(16, 185, 129, 0.08);
+  border-color: #10b981;
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.5);
+}
+
+.new-unique-card h4 {
+  color: #34d399;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.new-unique-card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Media Queries for All Devices */
+@media (max-width: 1024px) {
+  .new-unique-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-unique-grid {
+    grid-template-columns: 1fr;
+  }
+  .top-hero-banner {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-unique-card {
+    padding: 1.25rem;
+  }
+}

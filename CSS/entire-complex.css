@@ -1,0 +1,162 @@
+      :root {
+        --bg-obsidian: #07090E;
+        --card-surface: #0F172A;
+        --border-emerald: #10B981;
+        --accent-amber: #F59E0B;
+        --text-slate: #94A3B8;
+        --text-light: #F8FAFC;
+      }
+
+      body {
+        background-color: var(--bg-obsidian);
+        color: var(--text-light);
+        font-family: system-ui, -apple-system, sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* Unique Hero Matrix Header */
+      .overview-hero {
+        background: radial-gradient(circle at center, #1E293B 0%, #07090E 70%);
+        border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+        padding: 5rem 1.5rem 4rem;
+        position: relative;
+      }
+
+      .overview-hero::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--border-emerald), transparent);
+      }
+
+      /* Unique Section Container Grid Pattern */
+      .overview-section {
+        background: var(--card-surface);
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        margin-bottom: 3.5rem;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+      }
+
+      .overview-section:hover {
+        border-color: rgba(245, 158, 11, 0.5);
+        box-shadow: 0 25px 60px rgba(16, 185, 129, 0.15);
+        transform: translateY(-4px);
+      }
+
+      .overview-image-wrapper {
+        background-color: #030712;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        position: relative;
+        min-height: 385px;
+      }
+
+      .overview-image {
+        max-width: 100%;
+        max-height: 450px;
+        object-fit: contain;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.6s ease;
+      }
+
+      .overview-image:hover {
+        transform: scale(1.02);
+      }
+
+      .overview-content {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .overview-badge {
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        color: #34D399;
+        background: rgba(16, 185, 129, 0.12);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        align-self: flex-start;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+      }
+
+      .overview-title {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #FFFFFF;
+        line-height: 1.25;
+        margin-bottom: 0.75rem;
+      }
+
+      .overview-subtitle {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--accent-amber);
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.02em;
+      }
+
+      .overview-specs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin-bottom: 1.75rem;
+      }
+
+      @media (max-width: 768px) {
+        .overview-specs-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .spec-pill {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0.65rem 1rem;
+        border-radius: 10px;
+        font-size: 0.85rem;
+        color: #E2E8F0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .spec-pill strong {
+        color: var(--accent-amber);
+      }
+
+      .standalone-blueprint-box {
+        background: rgba(15, 23, 42, 0.85);
+        border-left: 4px solid var(--border-emerald);
+        border-top: 1px solid rgba(16, 185, 129, 0.2);
+        border-right: 1px solid rgba(16, 185, 129, 0.2);
+        border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+        border-radius: 0 16px 16px 0;
+        padding: 2.5rem;
+        margin-top: -1.5rem;
+        margin-bottom: 3.5rem;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      }
+
+      .standalone-blueprint-box p {
+        font-size: 1.05rem;
+        line-height: 1.9;
+        color: #CBD5E1;
+        margin: 0;
+        text-align: justify;
+      }

@@ -1,0 +1,293 @@
+/* Variable Definitions */
+:root {
+  --bg-cream: #F5F0E6;
+  --nav-deep-blue: #0F172A;
+  --nav-blue-hover: #1E293B;
+  --accent-gold: #D97706;
+  --accent-gold-light: #FEF3C7;
+  --accent-emerald: #10B981;
+  --text-light: #F8FAFC;
+  --shadow-color: rgba(15, 23, 42, 0.4);
+  --transition-speed: 0.35s;
+}
+
+/* Base Navbar Layout - Position Fixed */
+.custom-navbar {
+  background-color: var(--nav-deep-blue);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Brand Styling (Left Side) */
+.nav-brand {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color var(--transition-speed) ease;
+}
+
+.nav-brand:hover {
+  color: #F59E0B;
+}
+
+/* Hamburger Toggler Button */
+.nav-toggler {
+  background: transparent;
+  border: 2px solid var(--accent-gold);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 36px;
+  transition: all var(--transition-speed) ease;
+}
+
+.nav-toggler:hover {
+  background-color: var(--accent-gold);
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-gold);
+  border-radius: 2px;
+  transition: all var(--transition-speed) ease;
+}
+
+.nav-toggler:hover .hamburger-bar {
+  background-color: var(--nav-deep-blue);
+}
+
+/* Toggler Cross Animation */
+.nav-toggler.active .hamburger-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-toggler.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggler.active .hamburger-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Dropdown Menu Layout */
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  right: 1.5rem;
+  width: 320px;
+  max-width: calc(100vw - 2rem);
+  background-color: var(--nav-deep-blue);
+  box-shadow: 0 15px 35px var(--shadow-color);
+  border-top: 2px solid var(--accent-gold);
+  border-radius: 0 0 14px 14px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s ease,
+              visibility 0.35s ease;
+}
+
+/* Open State with Vertical Scroll System for Smaller/Narrow Screens */
+.nav-menu.open {
+  max-height: 420px;
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Custom Scrollbar */
+.nav-menu::-webkit-scrollbar {
+  width: 6px;
+}
+.nav-menu::-webkit-scrollbar-track {
+  background: var(--nav-deep-blue);
+}
+.nav-menu::-webkit-scrollbar-thumb {
+  background: var(--accent-gold);
+  border-radius: 3px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Staggered Animation */
+.nav-item {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.nav-menu.open .nav-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay for Menu Items */
+.nav-menu.open .nav-item:nth-child(1) { transition-delay: 0.04s; }
+.nav-menu.open .nav-item:nth-child(2) { transition-delay: 0.08s; }
+.nav-menu.open .nav-item:nth-child(3) { transition-delay: 0.12s; }
+.nav-menu.open .nav-item:nth-child(4) { transition-delay: 0.16s; }
+.nav-menu.open .nav-item:nth-child(5) { transition-delay: 0.20s; }
+.nav-menu.open .nav-item:nth-child(6) { transition-delay: 0.24s; }
+.nav-menu.open .nav-item:nth-child(7) { transition-delay: 0.28s; }
+.nav-menu.open .nav-item:nth-child(8) { transition-delay: 0.32s; }
+.nav-menu.open .nav-item:nth-child(9) { transition-delay: 0.36s; }
+.nav-menu.open .nav-item:nth-child(10) { transition-delay: 0.40s; }
+
+/* Standard Link Styling */
+.nav-link {
+  display: block;
+  padding: 0.65rem 1rem;
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  transition: all var(--transition-speed) ease;
+}
+
+.nav-link:hover {
+  background-color: var(--nav-blue-hover);
+  color: var(--accent-gold);
+  border-left-color: var(--accent-gold);
+  padding-left: 1.25rem;
+}
+
+.nav-link.active {
+  background-color: var(--nav-blue-hover);
+  color: var(--accent-gold);
+  border-left-color: var(--accent-gold);
+  font-weight: 700;
+}
+
+/* =========================================================
+   1. ADVANCED UNIQUE UI: ORDER BUTTON (GOLDEN SHIMMER & GLOW)
+   ========================================================= */
+.nav-link.btn-book {
+  position: relative;
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+  background-size: 200% auto;
+  color: #ffffff !important;
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-left: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.45);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.btn-book::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: rotate(25deg);
+  transition: all 0.6s ease;
+}
+
+.nav-link.btn-book:hover {
+  background-position: right center;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.65);
+  padding-left: 1rem;
+}
+
+.nav-link.btn-book:hover::before {
+  left: 125%;
+}
+
+/* =========================================================
+   2. ADVANCED UNIQUE UI: FAQ BUTTON (EMERALD NEON GLASS GLOW)
+   ========================================================= */
+.nav-link.special {
+  position: relative;
+  background: rgba(16, 185, 129, 0.08);
+  color: #34d399 !important;
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #10b981;
+  border-left: 2px solid #10b981;
+  border-radius: 8px;
+  box-shadow: inset 0 0 12px rgba(16, 185, 129, 0.2),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.special:hover {
+  background: #10b981;
+  color: #0f172a !important;
+  border-color: #34d399;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.7),
+    inset 0 0 10px rgba(255, 255, 255, 0.5);
+  padding-left: 1rem;
+}
+
+/* Media Query for Medium and Larger Screens: 2-Columns Grid View */
+@media (min-width: 576px) {
+  .nav-container {
+    padding: 1rem 3rem;
+  }
+
+  .nav-menu {
+    width: 490px;
+    right: 3rem;
+  }
+
+  .nav-menu.open {
+    max-height: 520px;
+    overflow-y: visible;
+  }
+
+  .nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem 0.9rem;
+    padding: 1.25rem;
+  }
+
+  /* Order এবং FAQ বাটন দুটো একদম পাশাপাশি গ্রিডে সমমানে বসবে */
+  .nav-list .nav-item:nth-last-child(1),
+  .nav-list .nav-item:nth-last-child(2) {
+    grid-column: span 1;
+  }
+}
