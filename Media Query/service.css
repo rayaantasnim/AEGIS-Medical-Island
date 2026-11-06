@@ -1,0 +1,203 @@
+/* ==========================================================================
+   AEGIS Medical Island - Services Directory Spacing & Breathing Room Optimization
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. NON-MEDIA QUERY (Base Spacing & Margins)
+   -------------------------------------------------------------------------- */
+.service-card {
+  margin-bottom: 2.5rem !important;
+}
+
+.standalone-analysis-box {
+  margin-bottom: 3.5rem !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. MULTI-TIER RESPONSIVE MEDIA QUERIES (Mobile & Tablet Viewports)
+   -------------------------------------------------------------------------- */
+
+/* Tablet & Medium Screens (Max-width: 992px) */
+@media (max-width: 992px) {
+  .service-card {
+    margin-bottom: 2rem !important;
+  }
+  .standalone-analysis-box {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+/* Standard Mobile Viewports (Max-width: 768px) - Enhanced spacing and margins */
+@media (max-width: 768px) {
+  #main-content,
+  main.max-w-7xl,
+  .services-hero,
+  .service-card,
+  .standalone-analysis-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Increased margin-bottom and breathing room for service cards */
+  .service-card {
+    margin-top: 0.75rem !important;
+    margin-bottom: 2rem !important; /* Generous gap between service cards */
+    border-radius: 10px !important;
+  }
+
+  .standalone-analysis-box {
+    margin-top: -0.25rem !important;
+    margin-bottom: 2.5rem !important; /* Generous gap beneath analysis box */
+    padding: 1.15rem !important; /* Increased padding for free space inside box */
+    border-radius: 0 10px 10px 0 !important;
+  }
+
+  .standalone-analysis-box p {
+    font-size: 0.88rem !important;
+    line-height: 1.65 !important;
+    text-align: justify !important;
+  }
+
+  /* Hero Section Mobile Optimization */
+  .services-hero {
+    padding: 1.25rem 0.6rem !important;
+    margin-bottom: 1.5rem !important;
+    border-radius: 10px !important;
+  }
+
+  .services-hero h1 {
+    font-size: 1.65rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .services-hero p {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Force Grid to Stack Vertically & Full Width */
+  .service-card.grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Proper Image Sizing & Containers */
+  .service-image-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 160px !important;
+    max-height: 195px !important;
+    padding: 0.2rem !important;
+    margin: 0 !important;
+  }
+
+  .service-image {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 185px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+
+  /* Content Padding & Increased Spacing for Text and Elements */
+  .service-content {
+    width: 100% !important;
+    padding: 1rem 0.85rem !important; /* Generous padding for breathing room inside content cards */
+    margin: 0 !important;
+  }
+
+  .service-badge {
+    font-size: 0.68rem !important;
+    padding: 0.3rem 0.75rem !important;
+    margin-bottom: 0.75rem !important; /* Increased margin-bottom */
+  }
+
+  .service-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.4rem !important; /* Increased margin-bottom */
+    line-height: 1.3 !important;
+  }
+
+  .service-subtitle {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.85rem !important; /* Increased margin-bottom */
+  }
+
+  .service-content p {
+    font-size: 0.86rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important; /* Increased margin-bottom for paragraph */
+    text-align: justify !important;
+  }
+
+  /* Specs Grid & List Elements Spacing (More Free Space) */
+  .service-specs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important; /* Increased gap between spec badges */
+    margin-bottom: 1.25rem !important; /* Increased margin-bottom */
+  }
+
+  .spec-badge-item {
+    padding: 0.6rem 0.85rem !important; /* Increased padding for free space */
+    font-size: 0.81rem !important;
+    border-radius: 8px !important;
+    margin-bottom: 0.2rem !important; /* Added margin-bottom for list elements */
+  }
+
+  /* Action Buttons Spacing */
+  .action-section-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.6rem 0.8rem !important; /* Increased padding */
+    font-size: 0.78rem !important;
+    margin-top: 0.5rem !important; /* Increased top margin for separation */
+    border-radius: 8px !important;
+  }
+}
+
+/* Extra Small Mobile Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .services-hero h1 {
+    font-size: 1.35rem !important;
+  }
+
+  .service-image-container {
+    min-height: 140px !important;
+    max-height: 170px !important;
+  }
+
+  .service-image {
+    max-height: 160px !important;
+  }
+
+  .service-content {
+    padding: 0.85rem 0.65rem !important;
+  }
+
+  .standalone-analysis-box {
+    padding: 0.85rem !important;
+  }
+}
+
+/* Narrow Mobile Viewports (Max-width: 360px) */
+@media (max-width: 360px) {
+  .service-image-container {
+    min-height: 120px !important;
+    max-height: 145px !important;
+  }
+
+  .service-image {
+    max-height: 135px !important;
+  }
+}
