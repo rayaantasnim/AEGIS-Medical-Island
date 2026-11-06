@@ -1,0 +1,358 @@
+/* ==========================================================================
+   AEGIS Medical Island - Control Command Protocols Pure Vanilla CSS (Minimal Left/Right Margins)
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+body {
+  background-color: #f5f0e6 !important;
+  color: #1e293b !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding-top: 90px !important;
+}
+
+.control-container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 1rem 0.25rem 2rem 0.25rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Hero Banner with Core Complex Infrastructure image */
+.hero-banner-core {
+  position: relative !important;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.82)),
+              url("../Images/Core%20Complex%20Infrastructure/Birds%20view.jpg") center/cover no-repeat !important;
+  border-radius: 16px !important;
+  color: white !important;
+  padding: 2.5rem 1rem !important;
+  margin-bottom: 1.25rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25) !important;
+  border: 1px solid rgba(217, 119, 6, 0.35) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Infrastructure Architecture Overview Card */
+.architecture-overview-card {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 15px 35px -5px rgba(15, 23, 42, 0.1) !important;
+  margin-bottom: 1.25rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 1.25rem 0.75rem !important;
+  opacity: 1 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Control Sections (Low Margin, Low Padding, Precision Hover) */
+.control-section {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08) !important;
+  margin-bottom: 1rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  overflow: hidden !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  opacity: 1 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+.control-section:hover {
+  border-color: #d97706 !important;
+  box-shadow: 0 20px 45px -10px rgba(217, 119, 6, 0.22) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* Image Container - NO CROPPING & Smooth Zoom on Hover */
+.control-img-wrapper {
+  position: relative !important;
+  background: #0f172a !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.75rem !important;
+  min-height: 200px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.control-img {
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 280px !important;
+  object-fit: contain !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  transition: transform 0.5s ease !important;
+}
+
+.control-section:hover .control-img {
+  transform: scale(1.02) !important;
+}
+
+/* Content Formatting */
+.control-content {
+  padding: 1rem 0.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.control-badge {
+  background-color: rgba(217, 119, 6, 0.15) !important;
+  color: #d97706 !important;
+  border: 1px solid rgba(217, 119, 6, 0.4) !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  padding: 0.3rem 0.75rem !important;
+  border-radius: 9999px !important;
+  letter-spacing: 0.08em !important;
+  display: inline-block !important;
+  margin-bottom: 0.5rem !important;
+  width: fit-content !important;
+  text-transform: uppercase !important;
+}
+
+.control-title {
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  margin-bottom: 0.25rem !important;
+  line-height: 1.2 !important;
+}
+
+.control-subtitle {
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  color: #059669 !important;
+  margin-bottom: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Specs List */
+.control-specs-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.4rem !important;
+}
+
+.control-specs-list li {
+  font-size: 0.86rem !important;
+  color: #334155 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 0.5rem !important;
+  line-height: 1.4 !important;
+}
+
+.control-specs-list li span.dot {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #d97706 !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  margin-top: 0.35rem !important;
+  flex-shrink: 0 !important;
+}
+
+.control-specs-list li strong {
+  color: #0f172a !important;
+}
+
+/* Standalone Analytical Paragraph Box */
+.standalone-paragraph-box {
+  background-color: #f8fafc !important;
+  border-top: 2px dashed #cbd5e1 !important;
+  padding: 1rem 0.75rem !important;
+  box-sizing: border-box !important;
+}
+
+.standalone-paragraph-title {
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #64748b !important;
+  margin-bottom: 0.4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+}
+
+.standalone-paragraph-text {
+  font-size: 0.9rem !important;
+  line-height: 1.7 !important;
+  color: #1e293b !important;
+  text-align: justify !important;
+  margin: 0 !important;
+}
+
+/* Conclusion Banner Core */
+.conclusion-banner-core {
+  background: linear-gradient(rgba(15, 23, 42, 0.88), rgba(6, 78, 59, 0.9)),
+              url("../Images/Entire%20Complex/Night%20view.jpg") center/cover no-repeat !important;
+  border-radius: 16px !important;
+  color: white !important;
+  padding: 2.5rem 1rem !important;
+  margin-top: 1.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border: 1px solid rgba(52, 211, 153, 0.35) !important;
+  box-sizing: border-box !important;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsive Enhancements & Fluid Sizing)
+   ========================================================================== */
+
+@media (min-width: 992px) {
+  .control-container {
+    max-width: 1420px !important;
+    padding: 1.5rem 0.5rem 3rem 0.5rem !important;
+  }
+
+  .control-content {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .control-img-wrapper {
+    min-height: 300px !important;
+    padding: 1rem !important;
+  }
+
+  .control-img {
+    max-height: 400px !important;
+  }
+
+  .architecture-overview-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .hero-banner-core {
+    padding: 3.5rem 2rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .control-section .grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .control-content {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .control-img-wrapper {
+    min-height: 180px !important;
+    max-height: 240px !important;
+  }
+
+  .control-img {
+    max-height: 220px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .control-container {
+    padding: 0.5rem 0.1rem 1.5rem 0.1rem !important;
+  }
+
+  .hero-banner-core {
+    padding: 1.25rem 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+    border-radius: 12px !important;
+  }
+
+  .hero-banner-core h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-banner-core p {
+    font-size: 0.82rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .architecture-overview-card {
+    padding: 0.85rem 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+    border-radius: 12px !important;
+  }
+
+  .control-section {
+    margin-bottom: 0.75rem !important;
+    border-radius: 12px !important;
+  }
+
+  .control-content {
+    padding: 0.6rem 0.4rem !important;
+  }
+
+  .control-title {
+    font-size: 1.15rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .control-subtitle {
+    font-size: 0.76rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .control-specs-list li {
+    font-size: 0.82rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .standalone-paragraph-box {
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  .standalone-paragraph-text {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .conclusion-banner-core {
+    padding: 1.5rem 0.75rem !important;
+    margin-top: 1rem !important;
+    border-radius: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner-core h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .control-img-wrapper {
+    min-height: 150px !important;
+    max-height: 180px !important;
+  }
+
+  .control-img {
+    max-height: 170px !important;
+  }
+
+  .control-content {
+    padding: 0.5rem 0.3rem !important;
+  }
+}
