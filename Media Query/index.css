@@ -1,0 +1,474 @@
+/* ==========================================================================
+   AEGIS Medical Island - Master Upgraded Responsive & Full-Width Expansion
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. PREMIUM UI PARAGRAPH ARCHITECTURE & CONTAINER FULL-WIDTH OVERRIDES
+   -------------------------------------------------------------------------- */
+
+/* Eliminate excessive container padding/margins causing right/left gaps */
+#main-content,
+main.max-w-7xl,
+.aegis-container,
+.aegis-section,
+.feature-grid-section,
+.new-unique-section,
+.book-palace-section,
+.grand-hub-hero {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Global Narrative & Body Text Fine-Tuning (Tighter & Cleaner) */
+.serve .para, 
+.serve p, 
+.aegis-card-narrative, 
+.feature-box p, 
+.new-unique-card p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 0.96rem !important;
+  line-height: 1.62 !important;
+  letter-spacing: 0.01em !important;
+
+  color: #e2e8f0 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+
+  /* Justified Alignment with Tiny Margins */
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 0.3rem !important;
+  margin-left: 0 !important ;
+  margin-right: 0 !important;
+  padding: 0 !important;
+
+  position: relative !important;
+  word-break: break-word !important;
+}
+
+/* Hover effects & Highlighting */
+.serve .para:hover, 
+.aegis-card-narrative:hover {
+  color: #ffffff !important;
+  transition: color 0.3s ease !important;
+}
+
+.serve .para strong, 
+.aegis-card-narrative strong {
+  color: #fbbf24 !important;
+  font-weight: 700 !important;
+}
+
+.aegis-card-title, 
+.feature-box h4, 
+.new-unique-card h4 {
+  margin-top: 0 !important;
+  margin-bottom: 0.15rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  letter-spacing: -0.01em !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. DESKTOP & LARGE DISPLAY ADAPTATIONS (Min-width: 993px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 993px) {
+  #main-content,
+  main.max-w-7xl {
+    max-width: 100% !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .serve .para, 
+  .aegis-card-narrative {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0.4rem !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   3. TABLET & MEDIUM SCREEN RESPONSIVENESS (Max-width: 992px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  #main-content,
+  main.max-w-7xl,
+  .aegis-container,
+  .aegis-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+    max-width: 100% !important;
+  }
+
+  .grand-hub-hero {
+    padding: 1.5rem 0.75rem 1rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .hero-img-wrapper img {
+    max-height: 340px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .car, 
+  .car .carousel-item img {
+    height: 300px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .aegis-card-media {
+    height: 280px !important;
+  }
+
+  .serve .para, 
+  .aegis-card-narrative {
+    font-size: 0.94rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 0.3rem !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   4. MOBILE PHONE & SMALL SCREEN RESPONSIVENESS (Max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  #main-content,
+  main.max-w-7xl,
+  .aegis-container,
+  .aegis-section,
+  .feature-grid-section,
+  .new-unique-section,
+  .book-palace-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .grand-hub-hero {
+    padding: 1rem 0.4rem 0.75rem !important;
+    margin-bottom: 0.35rem !important;
+    border-radius: 8px !important;
+  }
+
+  .grand-hub-hero h1 {
+    font-size: 1.6rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .grand-hub-hero p {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-img-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2px !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .hero-img-wrapper img {
+    max-height: 200px !important;
+    width: 100% !important;
+    border-radius: 6px !important;
+  }
+
+  .car {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2px !important;
+    margin: 0.35rem auto !important;
+  }
+
+  .car img, 
+  .carousel-item img {
+    height: 190px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+  }
+
+  .new-unique-card img, 
+  .feature-box img {
+    height: 125px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .aegis-card-media {
+    height: 180px !important;
+    max-height: 180px !important;
+    margin-bottom: 0.3rem !important;
+    width: 100% !important;
+  }
+
+  .aegis-card-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Ultra Tiny Margins & Full Expansion */
+  .serve .para, 
+  .serve p, 
+  .aegis-card-narrative {
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 0.25rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    padding: 0 !important;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.3rem !important;
+    margin: 0.4rem 0 !important;
+    width: 100% !important;
+  }
+
+  .metric-card {
+    padding: 0.4rem 0.2rem !important;
+  }
+
+  .metric-number {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+
+  .metric-label {
+    font-size: 0.62rem !important;
+  }
+
+  .grid-cols-1.md\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0.35rem !important;
+    width: 100% !important;
+  }
+
+  .hub-gateway-card {
+    padding: 0.65rem !important;
+    margin-bottom: 0.1rem !important;
+    width: 100% !important;
+  }
+
+  .aegis-cards-stack {
+    gap: 0.35rem !important;
+    width: 100% !important;
+  }
+
+  .aegis-card {
+    padding: 0.65rem !important;
+    border-radius: 6px !important;
+    width: 100% !important;
+  }
+
+  .aegis-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.1rem !important;
+    padding-bottom: 0.2rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .aegis-card-title {
+    font-size: 1rem !important;
+  }
+
+  .feature-grid, 
+  .new-unique-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.35rem !important;
+    margin-top: 0.35rem !important;
+    width: 100% !important;
+  }
+
+  .feature-grid-section, 
+  .new-unique-section, 
+  .book-palace-section {
+    padding: 0.75rem 0.35rem !important;
+    margin: 0.4rem 0 !important;
+    border-radius: 6px !important;
+    width: 100% !important;
+  }
+
+  .book-palace-section h2 {
+    font-size: 1.35rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .hub-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.5rem 0.6rem !important;
+    font-size: 0.78rem !important;
+    margin-top: 0.35rem !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   5. ULTRA-COMPACT MOBILE DEVICES (Max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .grand-hub-hero h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.2rem !important;
+  }
+
+  .car img, 
+  .carousel-item img {
+    height: 160px !important;
+  }
+
+  .hero-img-wrapper img {
+    max-height: 160px !important;
+  }
+
+  .aegis-card-media {
+    height: 150px !important;
+  }
+
+  .serve .para, 
+  .serve p, 
+  .aegis-card-narrative {
+    font-size: 0.82rem !important;
+    line-height: 1.48 !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .aegis-title {
+    font-size: 1.12rem !important;
+  }
+
+  .aegis-card {
+    padding: 0.55rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   AEGIS Medical Island - Elite Luxury Paragraph UI Enhancement (Non-Media Query)
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+.serve .para, 
+.serve p, 
+.aegis-card-narrative {
+  /* High-End Architectural Typography */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 0.98rem !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0.025em !important;
+
+  /* Sophisticated Luxury Multi-Stop Linear Gradient (Platinum to Soft Silver/Gold Tint) */
+  background: linear-gradient(120deg, #ffffff 0%, #e2e8f0 40%, #cbd5e1 80%, #94a3b8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  
+  /* Deep Atmospheric Shadow & Glow for Depth */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)) !important;
+
+  /* Precision Justification */
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+
+  /* Micro Margins & Full Expansion */
+  margin-top: 0 !important;
+  margin-bottom: 0.35rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+
+  /* Fluid Motion & Animation Base */
+  position: relative !important;
+  word-break: break-word !important;
+  transform: translateZ(0) !important;
+  will-change: transform, filter !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  animation: aegisParagraphSmoothReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+/* Stunning Interactive Hover State (Golden Sovereign Radiance & Elevation) */
+.serve .para:hover, 
+.aegis-card-narrative:hover {
+  background: linear-gradient(120deg, #ffffff 0%, #fef3c7 35%, #fbbf24 85%, #d97706 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  transform: translateY(-2px) scale(1.002) !important;
+  filter: drop-shadow(0 6px 16px rgba(251, 191, 36, 0.35)) !important;
+}
+
+/* Premium Metallic Gold Highlighting for Bold Terms */
+.serve .para strong, 
+.aegis-card-narrative strong {
+  background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 50%, #d97706 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.035em !important;
+  filter: drop-shadow(0 1px 2px rgba(217, 119, 6, 0.4)) !important;
+}
+
+/* Butter-Smooth Entrance Animation */
+@keyframes aegisParagraphSmoothReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(2px) drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+  }
+}
