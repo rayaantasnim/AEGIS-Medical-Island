@@ -294,186 +294,92 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
-   AEGIS Medical Island - Navbar Responsive Media Queries & Elegance Polish
-   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   AEGIS Medical Island - Navbar Multi-Tier Responsive Media Queries
+   Focus: Navbar Height, Brand Font Size, and Link Font Size Only
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   1. BASE & MOBILE FLUID ADJUSTMENTS (< 768px)
-   -------------------------------------------------------------------------- */
-@media (max-width: 767px) {
+/* 1. Extra Small Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .custom-navbar {
+    height: 56px !important;
+  }
   .nav-container {
-    padding: 0.75rem 1rem !important;
+    padding: 0.5rem 0.75rem !important;
+    height: 100% !important;
   }
-
   .nav-brand {
-    font-size: 1.2rem !important;
-    letter-spacing: 0.3px !important;
+    font-size: 1rem !important;
   }
-
-  .nav-toggler {
-    width: 36px !important;
-    height: 32px !important;
-    padding: 0.3rem 0.5rem !important;
-  }
-
-  .nav-menu {
-    width: calc(100vw - 1.5rem) !important;
-    right: 0.75rem !important;
-    border-radius: 0 0 12px 12px !important;
-  }
-
-  .nav-list {
-    padding: 0.75rem !important;
-    gap: 0.4rem !important;
-  }
-
   .nav-link {
-    padding: 0.6rem 0.85rem !important;
+    font-size: 0.82rem !important;
+  }
+}
+
+/* 2. Standard Mobile Devices (Max-width: 768px) */
+@media (max-width: 768px) {
+  .custom-navbar {
+    height: 60px !important;
+  }
+  .nav-container {
+    padding: 0.6rem 1rem !important;
+    height: 100% !important;
+  }
+  .nav-brand {
+    font-size: 1.15rem !important;
+  }
+  .nav-link {
+    font-size: 0.88rem !important;
+  }
+}
+
+/* 3. Tablet Viewports (Max-width: 991px) */
+@media (max-width: 991px) {
+  .custom-navbar {
+    height: 64px !important;
+  }
+  .nav-container {
+    padding: 0.7rem 1.25rem !important;
+    height: 100% !important;
+  }
+  .nav-brand {
+    font-size: 1.25rem !important;
+  }
+  .nav-link {
     font-size: 0.9rem !important;
   }
 }
 
-
-/* --------------------------------------------------------------------------
-   2. TABLET & MEDIUM VIEWPORT REFINEMENTS (576px to 991px)
-   -------------------------------------------------------------------------- */
-@media (min-width: 576px) and (max-width: 991px) {
-  .nav-container {
-    padding: 0.85rem 2rem !important;
-  }
-
-  .nav-menu {
-    width: 460px !important;
-    right: 2rem !important;
-  }
-
-  .nav-list {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.6rem 0.75rem !important;
-    padding: 1rem !important;
-  }
-
-  .nav-link.btn-book,
-  .nav-link.special {
-    grid-column: span 1 !important;
-  }
-}
-
-
-/* --------------------------------------------------------------------------
-   3. DESKTOP & WIDE SCREEN OPTIMIZATION (>= 992px)
-   [Optional Transition from Hamburger to Inline Horizontal Navigation]
-   -------------------------------------------------------------------------- */
+/* 4. Desktop & Wide Screens (Min-width: 992px) */
 @media (min-width: 992px) {
+  .custom-navbar {
+    height: 70px !important;
+  }
   .nav-container {
-    padding: 0.85rem 2rem !important;
-    max-width: 1420px !important;
+    padding: 0.85rem 1.5rem !important;
+    height: 100% !important;
   }
-
-  /* Hide mobile hamburger toggler on desktop screens */
-  .nav-toggler {
-    display: none !important;
+  .nav-brand {
+    font-size: 1.4rem !important;
   }
-
-  /* Convert absolute dropdown menu into a static, horizontal inline flex menu */
-  .nav-menu {
-    position: static !important;
-    width: auto !important;
-    max-width: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-    max-height: none !important;
-    overflow: visible !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-
-  .nav-list {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 0.35rem 0.5rem !important;
-    padding: 0 !important;
-  }
-
-  /* Ensure desktop items appear immediately without fade-in delays */
-  .nav-item {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
   .nav-link {
-    padding: 0.45rem 0.7rem !important;
-    font-size: 0.84rem !important;
-    border-radius: 6px !important;
-    border-left: none !important;
-    border-bottom: 2px solid transparent !important;
-    white-space: nowrap !important;
-  }
-
-  .nav-link:hover {
-    background-color: var(--nav-blue-hover) !important;
-    color: var(--accent-gold) !important;
-    border-left-color: transparent !important;
-    border-bottom-color: var(--accent-gold) !important;
-    padding-left: 0.7rem !important;
-    transform: translateY(-1px) !important;
-  }
-
-  .nav-link.active {
-    background-color: var(--nav-blue-hover) !important;
-    color: var(--accent-gold) !important;
-    border-left-color: transparent !important;
-    border-bottom-color: var(--accent-gold) !important;
-  }
-
-  /* Desktop styling for Order & FAQ buttons */
-  .nav-link.btn-book,
-  .nav-link.special {
-    padding: 0.45rem 0.9rem !important;
-    font-size: 0.82rem !important;
-    border-radius: 6px !important;
-    border-left: none !important;
+    font-size: 0.85rem !important;
   }
 }
 
-
-/* --------------------------------------------------------------------------
-   4. EXTRA WIDE DESKTOP VIEWPORTS (>= 1200px)
-   -------------------------------------------------------------------------- */
+/* 5. Extra Large Display Screens (Min-width: 1200px) */
 @media (min-width: 1200px) {
-  .nav-link {
-    padding: 0.5rem 0.85rem !important;
-    font-size: 0.88rem !important;
+  .custom-navbar {
+    height: 75px !important;
   }
-
-  .nav-list {
-    gap: 0.35rem 0.75rem !important;
+  .nav-container {
+    padding: 0.95rem 2rem !important;
+    height: 100% !important;
+  }
+  .nav-brand {
+    font-size: 1.5rem !important;
+  }
+  .nav-link {
+    font-size: 0.9rem !important;
   }
 }
