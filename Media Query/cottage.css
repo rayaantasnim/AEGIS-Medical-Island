@@ -1,0 +1,356 @@
+/* ==========================================================================
+   AEGIS Medical Island - Sovereign Water Cottages Margin-Bottom Optimization
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+:root {
+  --bg-cream: #F5F0E6;
+  --nav-deep-blue: #0F172A;
+  --accent-gold: #D97706;
+  --bg-card: #FFFFFF;
+  --border-subtle: rgba(217, 119, 6, 0.2);
+  --border-hover: rgba(217, 119, 6, 0.6);
+}
+
+body {
+  background-color: var(--bg-cream) !important;
+  color: #1E293B !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding-top: 80px !important;
+}
+
+/* Main Container */
+.max-w-7xl {
+  max-width: 1350px !important;
+  margin: 0 auto !important;
+  padding: 0.5rem 0.25rem 3rem 0.25rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Hero Section Spacing */
+header.text-center {
+  margin-bottom: 1.75rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+header.text-center h1 {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+header.text-center p {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Cottage Cards (Enhanced margin-bottom for breathing room) */
+.cottage-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  margin-bottom: 1.75rem !important; /* Increased margin-bottom between cards */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.cottage-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, #fbbf24, transparent) !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.cottage-card:hover {
+  transform: translateY(-4px) scale(1.002) !important;
+  border-color: var(--border-hover) !important;
+  box-shadow: 0 20px 40px rgba(217, 119, 6, 0.15) !important;
+}
+
+.cottage-card:hover::before {
+  opacity: 1 !important;
+}
+
+/* Image Container & Smooth Zoom */
+.cottage-image-container {
+  background-color: #0A0F1D !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.75rem !important;
+  min-height: 200px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.cottage-image {
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 280px !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease !important;
+  filter: brightness(0.95) !important;
+}
+
+.cottage-card:hover .cottage-image {
+  transform: scale(1.035) !important;
+  filter: brightness(1.05) !important;
+}
+
+/* Content Formatting & Enhanced Element Margin-Bottom */
+.cottage-content {
+  padding: 1.25rem 1rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.cottage-badge {
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  color: var(--accent-gold) !important;
+  background: rgba(217, 119, 6, 0.1) !important;
+  border: 1px solid rgba(217, 119, 6, 0.3) !important;
+  padding: 0.3rem 0.75rem !important;
+  border-radius: 50px !important;
+  align-self: flex-start !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0.85rem !important; /* Added margin-bottom */
+  transition: all 0.3s ease !important;
+}
+
+.cottage-card:hover .cottage-badge {
+  background: rgba(217, 119, 6, 0.2) !important;
+  border-color: rgba(217, 119, 6, 0.6) !important;
+}
+
+.cottage-title {
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  color: var(--nav-deep-blue) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.4rem !important; /* Added margin-bottom */
+}
+
+.cottage-subtitle {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: var(--accent-gold) !important;
+  margin-bottom: 0.85rem !important; /* Added margin-bottom */
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.cottage-description {
+  font-size: 0.9rem !important;
+  line-height: 1.7 !important;
+  color: #475569 !important;
+  margin-bottom: 1rem !important; /* Increased margin-bottom */
+  text-align: justify !important;
+}
+
+/* Features Lists (Added margin-bottom for list items) */
+.cottage-features,
+.residency-features {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+
+.cottage-features li,
+.residency-features li {
+  font-size: 0.85rem !important;
+  color: #334155 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 0.5rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.35rem !important; /* Added margin-bottom for elements */
+}
+
+.cottage-features li strong,
+.residency-features li strong {
+  color: var(--nav-deep-blue) !important;
+}
+
+/* Standalone Analytical Paragraph Box (Increased margin-bottom) */
+.standalone-paragraph-box {
+  background: #FFFFFF !important;
+  border-left: 4px solid var(--accent-gold) !important;
+  border-top: 1px solid rgba(217, 119, 6, 0.15) !important;
+  border-right: 1px solid rgba(217, 119, 6, 0.15) !important;
+  border-bottom: 1px solid rgba(217, 119, 6, 0.15) !important;
+  border-radius: 0 10px 10px 0 !important;
+  padding: 1.25rem 1rem !important;
+  margin-top: -0.5rem !important;
+  margin-bottom: 2.25rem !important; /* Increased gap beneath standalone analysis box */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04) !important;
+  box-sizing: border-box !important;
+  transition: all 0.3s ease !important;
+}
+
+.standalone-paragraph-box:hover {
+  box-shadow: 0 12px 25px rgba(217, 119, 6, 0.08) !important;
+}
+
+.standalone-paragraph-box p {
+  font-size: 0.9rem !important;
+  line-height: 1.7 !important;
+  color: #1E293B !important;
+  margin: 0 !important;
+  text-align: justify !important;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsive Enhancements & Fluid Sizing)
+   ========================================================================== */
+
+@media (min-width: 992px) {
+  .max-w-7xl {
+    padding: 1.5rem 1rem 4rem 1rem !important;
+  }
+
+  .cottage-content {
+    padding: 2.25rem 1.75rem !important;
+  }
+
+  .cottage-image-wrapper,
+  .cottage-image-container {
+    min-height: 300px !important;
+    padding: 1rem !important;
+  }
+
+  .cottage-image {
+    max-height: 380px !important;
+  }
+
+  .standalone-paragraph-box {
+    padding: 1.5rem 2rem !important;
+    margin-bottom: 2.75rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .cottage-card.grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .cottage-content {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .cottage-image-container {
+    min-height: 180px !important;
+    max-height: 240px !important;
+  }
+
+  .cottage-image {
+    max-height: 220px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-w-7xl {
+    padding: 0.5rem 0.1rem 2rem 0.1rem !important;
+  }
+
+  header.text-center {
+    margin-bottom: 1.25rem !important;
+  }
+
+  header.text-center h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  header.text-center p {
+    font-size: 0.82rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .cottage-card {
+    margin-bottom: 1.25rem !important;
+    border-radius: 12px !important;
+  }
+
+  .cottage-content {
+    padding: 0.85rem 0.65rem !important;
+  }
+
+  .cottage-title {
+    font-size: 1.15rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .cottage-subtitle {
+    font-size: 0.76rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .cottage-description {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .cottage-features li,
+  .residency-features li {
+    font-size: 0.82rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .standalone-paragraph-box {
+    padding: 0.85rem 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+    border-radius: 0 8px 8px 0 !important;
+  }
+
+  .standalone-paragraph-box p {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  header.text-center h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .cottage-image-container {
+    min-height: 150px !important;
+    max-height: 180px !important;
+  }
+
+  .cottage-image {
+    max-height: 170px !important;
+  }
+
+  .cottage-content {
+    padding: 0.75rem 0.5rem !important;
+  }
+}
