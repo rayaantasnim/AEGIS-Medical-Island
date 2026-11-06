@@ -72,3 +72,366 @@
   margin: 0;
 }
 
+
+/* ==========================================================================
+   AEGIS Medical Island - Hill Island & Cliffside Sanctuary Top Gap & Padding Polish
+   Authorized by Rayaan Tasnim | IDAI Universe Sovereign Infrastructure
+   ========================================================================== */
+
+:root {
+  --bg-cream: #F5F0E6;
+  --nav-deep-blue: #0F172A;
+  --accent-gold: #D97706;
+  --accent-blue: #3B82F6;
+  --bg-card: #FFFFFF;
+  --border-subtle: rgba(59, 130, 246, 0.2);
+  --border-hover: rgba(59, 130, 246, 0.5);
+}
+
+body {
+  background-color: var(--bg-cream) !important;
+  color: #1E293B !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding-top: 65px !important; /* Reduced top padding for navbar clearance */
+}
+
+/* Main Container - Reduced top padding/margin */
+.max-w-7xl {
+  max-width: 1350px !important;
+  margin: 0 auto !important;
+  padding: 0.25rem 0.25rem 2rem 0.25rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Hero Section Spacing - Minimized top gap */
+header.text-center {
+  margin-top: 0.5rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+header.text-center h1 {
+  font-size: 1.85rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.35rem !important;
+}
+
+header.text-center p {
+  font-size: 0.88rem !important;
+  line-height: 1.45 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Cottage Cards */
+.cottage-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  margin-bottom: 1.25rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.cottage-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, #60a5fa, transparent) !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.cottage-card:hover {
+  transform: translateY(-4px) scale(1.002) !important;
+  border-color: var(--border-hover) !important;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15) !important;
+}
+
+.cottage-card:hover::before {
+  opacity: 1 !important;
+}
+
+/* Image Container & Smooth Zoom */
+.cottage-image-container {
+  background-color: #0A0F1D !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.5rem !important;
+  min-height: 180px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.cottage-image {
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 250px !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease !important;
+  filter: brightness(0.95) !important;
+}
+
+.cottage-card:hover .cottage-image {
+  transform: scale(1.035) !important;
+  filter: brightness(1.05) !important;
+}
+
+/* Content Formatting & Low Padding */
+.cottage-content {
+  padding: 1rem 0.85rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.cottage-badge {
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  color: var(--accent-blue) !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+  padding: 0.25rem 0.65rem !important;
+  border-radius: 50px !important;
+  align-self: flex-start !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0.6rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.cottage-card:hover .cottage-badge {
+  background: rgba(59, 130, 246, 0.2) !important;
+  border-color: rgba(59, 130, 246, 0.6) !important;
+}
+
+.cottage-title {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  color: var(--nav-deep-blue) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.cottage-subtitle {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: var(--accent-blue) !important;
+  margin-bottom: 0.6rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.cottage-description {
+  font-size: 0.86rem !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+  margin-bottom: 0.75rem !important;
+  text-align: justify !important;
+}
+
+/* Features Lists */
+.cottage-features,
+.residency-features {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.4rem !important;
+}
+
+.cottage-features li,
+.residency-features li {
+  font-size: 0.84rem !important;
+  color: #334155 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 0.4rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.cottage-features li strong,
+.residency-features li strong {
+  color: var(--nav-deep-blue) !important;
+}
+
+/* Standalone Analytical Paragraph Box */
+.standalone-paragraph-box {
+  background: #FFFFFF !important;
+  border-left: 4px solid var(--accent-blue) !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.15) !important;
+  border-right: 1px solid rgba(59, 130, 246, 0.15) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15) !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 1rem 0.85rem !important;
+  margin-top: -0.4rem !important;
+  margin-bottom: 1.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04) !important;
+  box-sizing: border-box !important;
+  transition: all 0.3s ease !important;
+}
+
+.standalone-paragraph-box:hover {
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.08) !important;
+}
+
+.standalone-paragraph-box p {
+  font-size: 0.86rem !important;
+  line-height: 1.6 !important;
+  color: #1E293B !important;
+  margin: 0 !important;
+  text-align: justify !important;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsive Enhancements & Fluid Sizing)
+   ========================================================================== */
+
+@media (min-width: 992px) {
+  .max-w-7xl {
+    padding: 1rem 1rem 3rem 1rem !important;
+  }
+
+  .cottage-content {
+    padding: 1.75rem 1.5rem !important;
+  }
+
+  .cottage-image-container {
+    min-height: 260px !important;
+    padding: 0.75rem !important;
+  }
+
+  .cottage-image {
+    max-height: 340px !important;
+  }
+
+  .standalone-paragraph-box {
+    padding: 1.25rem 1.75rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .cottage-card.grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .cottage-content {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .cottage-image-container {
+    min-height: 160px !important;
+    max-height: 220px !important;
+  }
+
+  .cottage-image {
+    max-height: 200px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px !important;
+  }
+
+  .max-w-7xl {
+    padding: 0.25rem 0.1rem 1.5rem 0.1rem !important;
+  }
+
+  header.text-center {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  header.text-center h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.2 !important;
+  }
+
+  header.text-center p {
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .cottage-card {
+    margin-bottom: 1rem !important;
+    border-radius: 10px !important;
+  }
+
+  .cottage-content {
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  .cottage-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .cottage-subtitle {
+    font-size: 0.74rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .cottage-description {
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .cottage-features li,
+  .residency-features li {
+    font-size: 0.8rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .standalone-paragraph-box {
+    padding: 0.75rem 0.6rem !important;
+    margin-bottom: 1.25rem !important;
+    border-radius: 0 6px 6px 0 !important;
+  }
+
+  .standalone-paragraph-box p {
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  header.text-center h1 {
+    font-size: 1.15rem !important;
+  }
+
+  .cottage-image-container {
+    min-height: 140px !important;
+    max-height: 160px !important;
+  }
+
+  .cottage-image {
+    max-height: 150px !important;
+  }
+
+  .cottage-content {
+    padding: 0.6rem 0.4rem !important;
+  }
+}
